@@ -63,11 +63,6 @@ class getid3_writetags
 	// private
 	var $ThisFileInfo; // analysis of file before writing
 
-	function getid3_writetags() {
-		return true;
-	}
-
-
 	function WriteTags() {
 
 		if (empty($this->filename)) {

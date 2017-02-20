@@ -29,10 +29,6 @@ class getid3_write_id3v2
 	var $warnings                    = array();  // any non-critical errors will be stored here
 	var $errors                      = array();  // any critical errors will be stored here
 
-	function getid3_write_id3v2() {
-		return true;
-	}
-
 	function WriteID3v2() {
 		// File MUST be writeable - CHMOD(646) at least. It's best if the
 		// directory is also writeable, because that method is both faster and less susceptible to errors.

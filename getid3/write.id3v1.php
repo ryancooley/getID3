@@ -23,10 +23,6 @@ class getid3_write_id3v1
 	var $warnings = array(); // any non-critical errors will be stored here
 	var $errors   = array(); // any critical errors will be stored here
 
-	function getid3_write_id3v1() {
-		return true;
-	}
-
 	function WriteID3v1() {
 		// File MUST be writeable - CHMOD(646) at least
 		if (!empty($this->filename) && is_readable($this->filename) && is_writable($this->filename) && is_file($this->filename)) {

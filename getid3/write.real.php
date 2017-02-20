@@ -22,10 +22,6 @@ class getid3_write_real
 	var $errors            = array(); // any critical errors will be stored here
 	var $paddedlength      = 512;     // minimum length of CONT tag in bytes
 
-	function getid3_write_real() {
-		return true;
-	}
-
 	function WriteReal() {
 		// File MUST be writeable - CHMOD(646) at least
 		if (is_writeable($this->filename) && is_file($this->filename) && ($fp_source = fopen($this->filename, 'r+b'))) {

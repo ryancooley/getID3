@@ -22,10 +22,6 @@ class getid3_write_lyrics3
 	var $warnings        = array(); // any non-critical errors will be stored here
 	var $errors          = array(); // any critical errors will be stored here
 
-	function getid3_write_lyrics3() {
-		return true;
-	}
-
 	function WriteLyrics3() {
 		$this->errors[] = 'WriteLyrics3() not yet functional - cannot write Lyrics3';
 		return false;

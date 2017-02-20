@@ -22,10 +22,6 @@ class getid3_write_metaflac
 	var $warnings = array(); // any non-critical errors will be stored here
 	var $errors   = array(); // any critical errors will be stored here
 
-	function getid3_write_metaflac() {
-		return true;
-	}
-
 	function WriteMetaFLAC() {
 
 		if (preg_match('#(1|ON)#i', ini_get('safe_mode'))) {
@@ -152,7 +148,7 @@ class getid3_write_metaflac
 		// 0x7A inclusive (a-z).
 
 		// replace invalid chars with a space, return uppercase text
-		// Thanks Chris Bolt <chris-getid3Øbolt*cx> for improving this function
+		// Thanks Chris Bolt <chris-getid3ï¿½bolt*cx> for improving this function
 		// note: *reg_replace() replaces nulls with empty string (not space)
 		return strtoupper(preg_replace('#[^ -<>-}]#', ' ', str_replace("\x00", ' ', $originalcommentname)));
 
